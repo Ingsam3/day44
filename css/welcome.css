@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+/*welcome.jsp ui*/
+
+	#sub_img {
+		width:971px; height: 179px;
+		background-image:url(../images/company/sub_back.png); /*배경이미지 경로*/
+		background-repeat: no-repeat;
+		background-position: left top; 
+		
+	}
+	#sub_menu { /*영역 지정*/
+		width: 238px; 
+		float: left;
+		margin: 20px;
+		border: 0px solid #ccc;
+		font-size: 1em;
+		
+	}
+	#sub_menu > ul { 
+		list-style: none; /*목록 마크 없애기*/
+		margin: 20px 0px 0px 10px;
+	}
+	#sub_menu a {
+		text-decoration: none;
+		color: #666;
+		display: block;
+		height: 15px;
+		width: 150px;
+		padding: 7px;
+		border-bottom-width:1px; 
+		border-bottom-style: dotted;
+		border-bottom-color: #999;
+		background-image: url(../images/bullet.gif);
+		background-repeat: no-repeat;
+		background-position: right center; 
+	}
+	#sub_menu a:hover {
+		background-image: url(../images/bullet_orange.gif);
+		background-repeat: no-repeat;
+		background-position: right center; 
+		color: #F90; /*글자색도 변경*/
+	}
+	
+	/*서브 메인 본문 UI*/
+	#sub_main_cont { 
+		width: 675px; 
+		border: 0px solid #ccc; /*선 생성*/
+		float: right;
+		margin-right: 15px;
+	}
+	#sub_main_cont h1 {
+		font-family: "궁서체";
+		font-size: 45px; font-weight : normal;
+		color: #ccc;
+		margin: 20px 0px;
+	
+	}
+	
+	#sub_main_cont p {
+		padding-left: 10px;/*들여쓰기 효과*/
+	}
+	.ceo {
+		float: right; /*이미지 오른쪽 배치, 문자를 왼쪽에 배치*/	
+		margin: 5px;
+	}
+	figcaption {
+		text-align: center;
+		color: skyblue;
+		font-weight: bold;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

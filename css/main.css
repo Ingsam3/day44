@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+/* ex01.jsp ui*/
+
+	body{
+		background-color: #898989; /* 본문 배경색 */
+		margin: 0px;
+		padding: 0px;
+		font-size:  0.75em; 
+		line-height: 1.2em; /* 수직 정렬 */
+		color: #333; /* #333333 16진수 색상 코드를 줄여서 표현  */
+	}
+	
+	#wrap {
+		width: 971px;
+		text-align: left;/* 글자 수평-왼쪽 */
+		margin: 0px;
+		margin-left: auto; margin-right: auto; /* div(블록요소)의 일정 너비 지정, 수평좌우 중앙정렬시 사용 */
+		background-image:url(../images/shadow.png); /*배경이미지*/
+		background-repeat: repeat-y; /* y축 방향으로 반복 */
+		min-height: 940px;
+	}
+	#logo {
+		float: left; 
+		width: 265px;
+		margin: 60px 0px 0px 40px;/* 시계방향  */
+	}
+	header {
+		height: 151px;
+	}
+	nav {
+		width: 600px;
+		margin: 70px 20px 0px 0px;
+		float: right; /* 오른쪽 배치  */
+	}
+	nav ul {
+		list-style: none; /* 목록 앞 마커 없애기 */
+		font-family: verdana,Geneva, sans-serif;
+		font-size: 13px; font-weight: 100;
+		color: #333;
+	}
+	nav ul li {/* 목록 ui */
+		float: left; /* 수직 목록을 수평으로 변경 */
+		margin: 0px 5px; /* 상하 바깥여백 0px , 좌우 바깥여백 5px */
+	}
+	nav a {
+		display: block; 
+		height: 20px;
+		padding: 10px;
+		text-decoration: none; /* 하이퍼링크 밑줄 제거 */
+		color: #333;
+	}
+	nav a:hover { /* hover : 마우스 오버시 css 효과*/
+		background-image:url(../images/blue.gif); /* 배경이미지 */
+		background-repeat: repeat-x; /* 수평방향 x축으로 반복 */ 
+		background-position: bottom; /* 밑 쪽 배치 */
+		/* 밑줄을 이미지로 삽입-사이즈는 그라 크기에 따라 달라짐  */
+	}
+	.clear{
+		clear:both; /* float 속성을 제거, ui 깨지는 현상을 막아줌 */
+	}
+	#login{
+		float: right; 
+		margin: 20px 64px 0px 0px;
+		font-family: Arial,Helvetica,sans-serif;
+		font-size: 12px;
+		word-spacing: 5px; /* 단어 사이 간격 지정 */
+	}
+	#login a{
+		text-decoration: none; /* 하이퍼링크 밑줄 제거 */
+	}
+	#login a:hover{
+		color: #F90; /* #ff9900; 줄여서 표현 */
+	}
+	
+	/*메인이미지*/
+	#main_img{
+		width: 971px; height: 308px;
+		background-image: url(../images/img_back.png);
+		background-repeat: no-repeat; /*배경 이미지 반복 X */
+		/*background-position: center top;  중앙 위 배치 - 없는게 자연스러움,,*/
+	}
+	#main_img > img {
+		margin-top: 9px;
+	}
+	
+	/*ex05.jsp 메인 본문 ui*/
+	article#main_cont {
+		margin: 5px 0px 5px 0px;
+	}
+	#soluction {
+		border :solid 1px red;
+		border-radius: 10px; /* 테두리 둥굴게 처리하기 */
+		width: 910px; 
+		min-height: 100px; /* 최소 높이 지정 */
+		background: #EBEBEB;
+		padding: 10px;
+		margin: auto; /* 요소 중앙 배치 */
+		/*강사님 => margin: 0px 0px 0px 20px; */
+	}
+	#hosting, #security, #payment{
+		width: 30%; /* % 단위는 상대적 크기 */
+		float: left; /* 복수개의  div 수직정렬을 수평정렬로 배치 */
+		padding: 10px;
+	}
+	#hosting > h3, #security > h3, #payment > h3 {
+		font-size: 14px; font-weight:600;
+		color: #333;
+		margin: 0px 0px 10px 80px; 
+		
+	}
+	#hosting > p, #security > p, #payment > p {
+		font-size: 12px; 
+		color: #333;
+		margin: 0px 0px 0px 80px; 
+	} 
+	#hosting {
+		background-image: url(../images/icon1.png);
+		background-repeat: no-repeat;
+		background-position: left 15px;
+		border-right: 1px solid #ccc; /* 오른쪽 경계선 지정 */   
+	}
+	#security{
+		background-image: url(../images/icon2.png);
+		background-repeat: no-repeat;
+		background-position: left 15px;
+		border-right: 1px solid #ccc; 
+		margin-left: 10px;
+	}
+	
+	/*아래 메뉴*/
+	#payment {
+		background-image: url(../images/icon3.png);
+		background-repeat: no-repeat;
+		background-position: left 15px;
+		margin-left: 10px;
+	}
+	#sec_news, #news_notice {
+		float: left; 
+		width: 420px; 
+		margin: 15px 0px 0px 40px;
+	}
+	#sec_news > h3, #news_notice> h3 {
+		font-size: 14px; 
+		font-style: italic; /* 기울임 */
+		font-weight: normal;
+		width: 420px; height: 24px;
+		background-image: url(../images/h3_back.jpg); /* 텍스트 뒤로 배경이미지 깔림*/
+		background-repeat: no-repeat;
+		padding: 5px 0px 0px 22px;
+	}
+	#sec_news .orange {
+		color: #F26522;
+	}
+	
+	 #news_notice .brown {
+		color: #827b00;
+	}
+	/*sec_news*/
+	#sec_news dl {
+		margin-left: 6px; 
+	}
+	#sec_news dt {
+		font-size: 14px;
+		margin: 5px 0px;
+		color: #f00;
+	}
+	#sec_news dd {
+		margin-left: 0px; /*dd tag : 바깥 외쪽 여백 발생 -> 여백 들여쓰기 해야 함*/
+		color: #333;
+	}
+	#sec_news dt a{
+		color: #F00; 
+		text-decoration: none;
+	}
+	#sec_news dt a:hover {
+		color: #F90;
+		text-decoration: underline;/*마우스 올리면 밑줄선 생성*/
+	}
+	#sec_news dd a {
+		color: #333;
+		text-decoration: none;
+	}
+	#sec_news dd a:hover {
+		color: #F90;
+		text-decoration: underline;
+	}
+	/*news_notice*/
+	#news_notice table {
+		width: 400px; 
+		border-collapse: collapse; /* border-collapse : 셀의 경계선을 합쳐서 단일선으로 표시 */
+		text-align: center;
+	}
+	#news_notice td {
+		border-bottom-width: 1px; /*밑줄 성 두께*/
+		border-bottom-style: dotted; /*점선*/ 
+		border-bottom-color: #999; /*밑줄 색 */
+		padding: 6px 4px;
+	}
+	
+	/**/
+	#news_notice td.contxt {
+		background-image: url(../images/tr_back.gif);
+		background-repeat: no-repeat;
+		background-position: left center;
+		padding-left: 15px; 
+		text-align: left; /* 글자 수평 왼쪽 정렬 */
+		color: #333;
+	}
+	#news_notice a {
+		color: #333;
+		text-decoration: none;
+	}
+	#news_notice a:hover {
+		color: #F90;
+		text-decoration: none; 
+	}
+	/*하단 영역 footer ui*/
+	footer {
+		margin: 50px 0px 0px 0px;
+		height: 80px;
+		background-image: url(../images/under_logo.gif);
+		background-repeat: no-repeat;
+		background-position: 40px center;
+	}	
+	footer hr {
+		width: 900px;
+	}
+	#copy {
+		width: 450px;
+		margin: 20px 0px 0px 190px;
+		float: left;
+	}
+	#social {
+		width: 130px; 
+		margin: 20px 20px 0px 0px;
+		float: right;
+	}
+	#social img {
+		margin: 0px 7px;
+	}
+	
